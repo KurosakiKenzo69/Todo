@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoAPP</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<h1>Liste des tâches </h1>
+<div class="categories">
+    <button>Travail</button>
+    <button>Rappels</button>
+    <button>Personnel</button>
+</div>
+<div class="taches">
+    <label for="inp" class="inp">
+        <input type="text" id="inp" placeholder="&nbsp;">
+        <span class="label">Label</span>
+        <span class="focus-bg"></span>
+    </label>
+    <button type="button" id="envoi" onclick="envoi()">Ajouter</button>
+</div>
+
+<ul id="ma-liste"></ul>
+
+
+
+</body>
+</html>
