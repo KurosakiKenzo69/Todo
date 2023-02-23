@@ -24,7 +24,7 @@ button:hover {
 
 .taches {
     padding-top: 20px;
-    padding-left: 35px;
+    padding-left: 505px;
 }
 
 #envoi {
@@ -151,10 +151,11 @@ li {
     width: 599px;
     padding-left: 20px;
 }
-
+ /* Mobile */
 @media screen and (max-width: 844px) {
     #inp {
         width: 61%;
+        margin-right: 23px;
     }
 
     li {
@@ -166,7 +167,22 @@ li {
         margin-left: 0;
         margin-top: 20px;
     }
+
+    .taches {
+        padding-left: 14px;
+
+    }
+    ul {
+        margin-right: 18px;
+    }
 }
+
+/*@media screen and (max-width: 1044px) {*/
+/*    .taches {*/
+/*        position: relative;*/
+/*        left: 102px;*/
+/*    }*/
+/*}*/
 
 
 .categories {
@@ -189,46 +205,43 @@ li {
     margin-top: 4px;
 }
 
-.switch {
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    position: relative;
-    left: 1441px;
+.toggle input[type='checkbox'] {
+    display: none;
 }
 
-.toggle-thumb:before {
-    content: "";
-    height: 26px;
-    width: 26px;
-    position: absolute;
-    left: 4px;
-    bottom: 4px;
-    border-radius: 50%;
-    background-color: #E2E8F0;
-    transition: .4s all ease;
-}
-
-.toggle-thumb {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #475569;
-    border-radius: 40px;
+.toggle label {
+    background-color: #777;
+    border: 2px solid #555;
+    border-radius: 50px;
     cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    width: 100px;
+    height: 50px;
 }
 
-.checkbox {
-    opacity: 0;
-    width: 0;
-    height: 0;
+
+.toggle label::after {
+    background-color: #555;
+    border-radius: 50%;
+    content: ' ';
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: all ease-in-out 0.3s;
+    width: 42px;
+    height: 42px;
 }
 
-.checkbox:checked + .toggle-thumb:before {
-    transform: translateX(26px);
+.toggle input[type='checkbox']:checked ~ label {
+    background-color: #04B404;
+    border-color: transparent;
+}
+
+.toggle input[type='checkbox']:checked ~ label::after {
+    background-color: white;
+    transform: translateX(50px);
 }
