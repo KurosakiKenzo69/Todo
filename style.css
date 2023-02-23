@@ -181,7 +181,7 @@ li {
     margin-left: -37px;
     width: 40px;
     position: sticky;
-    left: 1767px;
+    left: 1988px;
     bottom: 17px;
     display: flex;
     justify-content: center;
@@ -195,9 +195,9 @@ li {
     height: 34px;
     position: relative;
     left: 1441px;
-  }
+}
 
-  .toggle-thumb:before {
+.toggle-thumb:before {
     content: "";
     height: 26px;
     width: 26px;
@@ -207,7 +207,7 @@ li {
     border-radius: 50%;
     background-color: #E2E8F0;
     transition: .4s all ease;
-  }
+}
 
 .toggle-thumb {
     position: absolute;
@@ -221,14 +221,14 @@ li {
     background-color: #475569;
     border-radius: 40px;
     cursor: pointer;
-  }
+}
 
-  .checkbox {
+.checkbox {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
 
-  .checkbox:checked + .toggle-thumb:before {
+.checkbox:checked + .toggle-thumb:before {
     transform: translateX(26px);
-  }
+}
