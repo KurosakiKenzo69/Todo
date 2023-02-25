@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,10 @@
     <link rel="icon" href="img/kvong.png">
     <script src="script.js"></script>
 </head>
-<body>
-<div class="toggle">
-    <input type="checkbox" id="toggle" />
-    <label for="toggle"></label>
-</div>
+<body class="dark">
+<button class="dark-theme">
+    <img src="img/dark-mode.svg" alt="dark mode" onclick="toggleDarkMode()">
+</button>
 
 <h1>Liste des tâches </h1>
 <div class="categories">
@@ -23,7 +22,7 @@
 </div>
 <div class="taches">
     <label for="inp" class="inp">
-        <input type="text" id="inp" placeholder="&nbsp;">
+        <input type="text" id="inp" class="light-text" placeholder="&nbsp;">
         <span class="label">Tâches</span>
         <span class="focus-bg"></span>
     </label>
@@ -35,4 +34,5 @@
 
 
 </body>
+</div>
 </html>

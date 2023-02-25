@@ -93,15 +93,40 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-const toggle = document.getElementById('toggle');
-const body = document.body;
+//
+// const dark = document.getElementsByClassName('dark-theme')[0];
+// const inputText = document.getElementById("inp");
+// function toggleDarkMode() {
+//     document.body.classList.toggle('dark-mode');
+//     inputText.classList.toggle("dark");
+// }
+//
+// dark.addEventListener('click', toggleDarkMode);
 
-toggle.addEventListener('input', e => {
-    const isChecked = e.target.checked;
+const dark = document.getElementsByClassName('dark-theme')[0];
+const inputText = document.getElementById("inp");
 
-    if (isChecked) {
-        body.classList.add('dark-theme');
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    inputText.classList.toggle("dark");
+    updateInputTextColor();
+}
+
+function updateInputTextColor() {
+    if (document.body.classList.contains('dark-mode')) {
+        inputText.style.color = "white";
     } else {
-        body.classList.remove('dark-theme');
+        inputText.style.color = "";
     }
-});
+}
+
+dark.addEventListener('click', toggleDarkMode);
+
+updateInputTextColor(); // Appeler la fonction pour initialiser la couleur du texte du input
+
+
+
+
+
+
+
