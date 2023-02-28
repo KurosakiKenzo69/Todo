@@ -129,4 +129,3 @@ updateInputTextColor(); // Appeler la fonction pour initialiser la couleur du te
 
 
 
-

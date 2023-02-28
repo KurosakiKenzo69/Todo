@@ -208,6 +208,7 @@ li {
 .dark-theme {
     border-radius: 20px;
     width: 44px;
+    display: none;
 }
 
 body {
