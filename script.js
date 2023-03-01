@@ -93,18 +93,10 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-//
-// const dark = document.getElementsByClassName('dark-theme')[0];
-// const inputText = document.getElementById("inp");
-// function toggleDarkMode() {
-//     document.body.classList.toggle('dark-mode');
-//     inputText.classList.toggle("dark");
-// }
-//
-// dark.addEventListener('click', toggleDarkMode);
 
 const dark = document.getElementsByClassName('dark-theme')[0];
 const inputText = document.getElementById("inp");
+
 
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
