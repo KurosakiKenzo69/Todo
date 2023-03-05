@@ -7,14 +7,19 @@
     <title>TodoAPP</title>
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="img/kvong.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="script.js"></script>
 </head>
 <body class="dark">
+    <div class="label-dark">
+    <label id="dark">Mode sombre : </label>
 <button class="dark-theme">
     <img src="img/dark-mode.svg" alt="dark mode" onclick="toggleDarkMode()">
 </button>
+</div>
 
-<h1>Liste des tâches </h1>
+
+<h1 class="animate__animated animate__fadeInUp">Liste des tâches </h1>
 <div class="categories">
     <button>Travail</button>
     <button>Rappels</button>

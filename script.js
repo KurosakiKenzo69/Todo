@@ -97,6 +97,13 @@ document.addEventListener("keydown", function(event) {
 const dark = document.getElementsByClassName('dark-theme')[0];
 const inputText = document.getElementById("inp");
 
+// window.onload = function() {
+//     if (localStorage.getItem("darkModeEnabled") === "true") {
+//         document.body.classList.add('dark-mode');
+//         inputText.classList.add("dark");
+//         updateInputTextColor();
+//     }
+// };
 
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
