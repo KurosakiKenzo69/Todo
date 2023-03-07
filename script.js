@@ -1,3 +1,5 @@
+import 'animate.css';
+
 // Enregistrer les données dans le localStorage avant de quitter la page
 window.onbeforeunload = function() {
     var listItems = document.querySelectorAll("li");
@@ -45,6 +47,9 @@ function envoi() {
 
         // Créer un nouvel élément li
         var newLi = document.createElement("li");
+        newLi.classList.add("list-item");
+
+
 
         // Créer un élément texte avec la valeur de l'input
         var textNode = document.createTextNode(inputValue);

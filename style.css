@@ -144,9 +144,21 @@ body {
 .dark-mode {
     background-color: black;
     color: white;
+
 }
 
-animate__fadeInUp
+.dark > div:nth-child(3) > label > input {
+    background-color: black;
+}
+
+.list-item {
+
+}
+
+
+
+
+
 
 
 
