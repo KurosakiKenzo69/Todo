@@ -1,5 +1,3 @@
-import 'animate.css';
-
 // Enregistrer les données dans le localStorage avant de quitter la page
 window.onbeforeunload = function() {
     var listItems = document.querySelectorAll("li");
@@ -47,9 +45,6 @@ function envoi() {
 
         // Créer un nouvel élément li
         var newLi = document.createElement("li");
-        newLi.classList.add("list-item");
-
-
 
         // Créer un élément texte avec la valeur de l'input
         var textNode = document.createTextNode(inputValue);
@@ -97,39 +92,4 @@ document.addEventListener("keydown", function(event) {
         envoi();
     }
 });
-
-
-const dark = document.getElementsByClassName('dark-theme')[0];
-const inputText = document.getElementById("inp");
-
-// window.onload = function() {
-//     if (localStorage.getItem("darkModeEnabled") === "true") {
-//         document.body.classList.add('dark-mode');
-//         inputText.classList.add("dark");
-//         updateInputTextColor();
-//     }
-// };
-
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    inputText.classList.toggle("dark");
-    updateInputTextColor();
-}
-
-function updateInputTextColor() {
-    if (document.body.classList.contains('dark-mode')) {
-        inputText.style.color = "white";
-    } else {
-        inputText.style.color = "";
-    }
-}
-
-dark.addEventListener('click', toggleDarkMode);
-
-updateInputTextColor(); // Appeler la fonction pour initialiser la couleur du texte du input
-
-
-
-
-
 
