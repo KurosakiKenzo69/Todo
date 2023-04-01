@@ -8,11 +8,12 @@
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="img/kvong.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
     <script src="script.js"></script>
 </head>
 <body>
 
-
+<div class="content">
 <h1 class="animate__animated animate__fadeInUp">Liste des tâches </h1>
 <div class="categories">
     <button>Travail</button>
@@ -24,10 +25,10 @@
         <input type="text" id="inp" placeholder="Tâches">
         <span class="focus-bg"></span>
     </label>
-    <button type="button" id="envoi" onclick="envoi()">Ajouter</button>
+    <button class="button is-rounded" type="button" id="envoi" onclick="envoi()">Ajouter</button>
 </div>
 
 <ul class="animate__animated animate__fadeInUp" id="ma-liste"> </ul>
-
+</div>
 </body>
 </html>
