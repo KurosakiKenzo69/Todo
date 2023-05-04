@@ -49,6 +49,7 @@ function createListItem(value) {
 
     // Ajouter un gestionnaire d'événement pour supprimer l'élément li lorsque le bouton est cliqué
     deleteButton.addEventListener("click", function() {
+        event.stopPropagation();
         newLi.remove();
         var localStorageData = JSON.parse(localStorage.getItem("userData"));
         delete localStorageData[value];
